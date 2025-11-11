@@ -25,7 +25,7 @@ df_loan = clean_df(df_loan)
 conn = pymysql.connect(
     host="localhost",
     user="root",        # 🔧 change if needed
-    password="pratik", # 🔧 change if needed
+    password="aditya524", # 🔧 change if needed
     autocommit=True
 )
 cursor = conn.cursor()
@@ -90,3 +90,4 @@ insert_data(df_loan, "loan_info")
 cursor.close()
 conn.close()
 print("🎉 All data successfully loaded into MySQL!")
+
